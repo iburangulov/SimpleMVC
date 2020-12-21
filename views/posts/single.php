@@ -2,13 +2,8 @@
 include_once VIEWS_PATH . 'templates/header.php';
 ?>
 <div class="content">
-
-
-
-<h1>Post <?php echo $id; ?></h1>
-
-
-
+        <div class="title"><?php echo $result['title']; ?></div>
+        <div class="post_content"><?php echo $result['content']; ?></div>
 </div>
 <?php
 include_once VIEWS_PATH . 'templates/footer.php';

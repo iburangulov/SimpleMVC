@@ -7,10 +7,13 @@ return array(
     'blog/(\d+)' => 'blog/post/$1',
     'blog.+' => 'blog/index',
 
-    
+
+    '' => 'pages/home',
+    'about' => 'pages/about',
+    'contacts' => 'pages/contacts',
 
 
 
 
-    '.*' => '404',
+    '.*' => 'pages/p404',
 );

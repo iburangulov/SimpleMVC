@@ -24,8 +24,7 @@ class DB
 
     public static function getById($table, $id)
     {
-        $ofset = $id - 1;
-        $query = "SELECT * FROM $table ORDER BY `id` LIMIT 1 OFFSET $ofset";
+        $query = "SELECT * FROM $table WHERE `id` = $id LIMIT 1";
         $pdo = self::getPDO();
         $result = $pdo->query($query);
         $resp = $result->fetch(PDO::FETCH_ASSOC);
