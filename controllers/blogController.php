@@ -20,23 +20,15 @@ class blogController
 
     public function page($id)
     {
-        echo 'Page . ' . $id . '<br>';
         $result = $this->model->getPage($id);
-
-        foreach ($result as $res) {
-            echo '<ul>';
-            foreach ($res as $key => $value) {
-                echo '<li>' . $key . ' - ' . $value . '</li>';
+        $title = 'Page ' . $id;
+        include_once VIEWS_PATH . 'posts/page.php';
             }
-            echo '</ul>';
-        }
-
-
-    }
 
     public function post($id)
     {
         $result = $this->model->getPost($id);
-        print_r($result);
+        $title = 'Post ' . $id;
+        include_once VIEWS_PATH . 'posts/single.php';
     }
 }

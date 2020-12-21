@@ -7,7 +7,7 @@ return array(
     'blog/(\d+)' => 'blog/post/$1',
     'blog.+' => 'blog/index',
 
-
+    
 
 
 
