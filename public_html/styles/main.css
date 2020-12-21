@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: black;
+}
+
+body {
+    background-color: brown;
+}
+
+div.navbar {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    background-color: #FFC300;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.navbar a {
+    display: block;
+    height: auto;
+    width: auto;
+    padding: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+div.content {
+    margin: 110px 10% 10px 10%;
+    padding: 30px;
+    background-color: #DAF7A6;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div.title {
+    padding: 10px;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+div.title a {
+    color: darkblue;
+}
+
+div.post_content {
+    padding: 10px;
+}
+
+div.short_post {
+    margin: 5px;
+    border: 1px solid brown;
+}
+
+div.sign {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.sign form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#inp {
+    height: 40px;
+    margin: 5px;
+}
+
+#btn {
+    height: 40px;
+    margin: 5px;
+}
