@@ -11,6 +11,9 @@ return array(
     '' => 'pages/home',
     'about' => 'pages/about',
     'contacts' => 'pages/contacts',
+    'signin' => 'pages/signin',
+    'signup' => 'pages/signup',
+    'signout' => 'user/signout',
 
 
 

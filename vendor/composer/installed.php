@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '4a3ee91309beba16ec43298b9c1978d6c1e4130c',
+    'reference' => 'e60e19a301196b68fc3ae3dba9a56ef8483ac537',
     'name' => 'burangulov/insaf',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '4a3ee91309beba16ec43298b9c1978d6c1e4130c',
+      'reference' => 'e60e19a301196b68fc3ae3dba9a56ef8483ac537',
     ),
   ),
 );
