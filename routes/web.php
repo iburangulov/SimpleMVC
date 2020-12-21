@@ -13,6 +13,7 @@ return array(
     'contacts' => 'pages/contacts',
     'signin' => 'pages/signin',
     'signup' => 'pages/signup',
+    'signout' => 'user/signout',
 
 
 

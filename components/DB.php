@@ -2,8 +2,6 @@
 
 
 namespace home\components;
-
-
 use PDO;
 
 class DB

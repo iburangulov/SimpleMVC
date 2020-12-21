@@ -19,12 +19,12 @@ class pagesController
 
     public function signin() {
         $title = 'Sign In';
-        include_once VIEWS_PATH . 'pages/contacts.php';
+        include_once VIEWS_PATH . 'pages/signin.php';
     }
 
     public function signup() {
         $title = 'Sign Up';
-        include_once VIEWS_PATH . 'pages/contacts.php';
+        include_once VIEWS_PATH . 'pages/signup.php';
     }
 
     public function p404() {
