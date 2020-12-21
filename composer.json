@@ -1,0 +1,16 @@
+{
+    "name": "burangulov/insaf",
+    "type": "project",
+    "authors": [
+        {
+            "name": "iburangulov",
+            "email": "iburanguloff@ya.ru"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "home\\": ""
+        }
+    }
+}
