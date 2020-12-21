@@ -22,8 +22,11 @@ class userController
             $user = $this->model->login($user_email, $user_password);
             if (isset($user['id']) AND isset($user['email']))
             {
-                $_SESSION['user_id'] = $user['id'];
-                $_SESSION['user_email'] = $user['email'];
+                $_SESSION['user'] = [
+                    'id' => $user['id'],
+                    'email' => $user['email'],
+
+                ];
                 $_SESSION['auth'] = true;
             }
 
