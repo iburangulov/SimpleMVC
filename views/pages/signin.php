@@ -4,7 +4,7 @@ include_once VIEWS_PATH . 'templates/navbar.php';
 ?>
 <div class="content">
     <div class="sign">
-        <form action="/user/signin" method="post">
+        <form action="/signin" method="POST">
             <input type="email" name="email" placeholder="Email" id="inp">
             <input type="password" name="password" placeholder="Password" id="inp">
             <input type="submit" id="btn" value="Sign In">
