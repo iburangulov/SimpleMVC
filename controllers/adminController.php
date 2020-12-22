@@ -1,12 +1,14 @@
 <?php
 
 
+use home\Middlewares\Auth;
+
 class adminController
 {
 
     public function __construct()
     {
-        if ($_SESSION['user']['type'] !== 'admin')
+        if (!Auth::isType('admin'))
         {
             header('Location: / ');
         }
