@@ -2,10 +2,12 @@
 include_once VIEWS_PATH . 'templates/header.php';
 include_once VIEWS_PATH . 'templates/navbar.php';
 ?>
+    <div class="content">
+
 <div class="row bg-info p-4 bg-light text-dark mb-1">
 		<div class="col p-3">
 			
-			<div class="h1">404 - not found!</div>
+			<div class="h1"><?php echo $error; ?></div>
 
 
 		</div>

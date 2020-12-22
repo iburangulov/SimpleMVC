@@ -1,7 +1,7 @@
 <?php
 
 
-use home\Middlewares\Auth;
+use home\middlewares\Auth;
 
 class adminController
 {
@@ -10,7 +10,8 @@ class adminController
     {
         if (!Auth::isType('admin'))
         {
-            header('Location: / ');
+            Auth::error('Access denied!');
+            die();
         }
     }
 

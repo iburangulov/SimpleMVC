@@ -35,15 +35,27 @@ class DB
     {
         $query = "SELECT * FROM $table LIMIT $limit OFFSET $offset";
         $pdo = self::getPDO();
-        $result = $pdo->query($query);
-        if ($result)
+        if ($pdo)
         {
+            $result = $pdo->query($query);
             $resp = array();
             while ($row = $result->fetch(PDO::FETCH_ASSOC))
             {
                 $resp[] = $row;
             }
             return $resp;
+        } else return false;
+    }
+
+    public static function tableCount(string $table)
+    {
+        $query = "SELECT COUNT(id) FROM `$table`";
+        $pdo = self::getPDO();
+        if ($pdo)
+        {
+            $request = $pdo->query($query);
+            $result = $request ? $request->fetch(PDO::FETCH_NUM) : false;
+            return $result[0];
         } else return false;
     }
 

@@ -22,4 +22,13 @@ class BlogModel extends Model
         $responce = ($item) ? $item : false;
         return $responce;
     }
+
+    public function getNumOfPosts()
+    {
+        $result = DB::tableCount($this->table);
+        if ($result)
+        {
+            return $result;
+        } else return false;
+    }
 }

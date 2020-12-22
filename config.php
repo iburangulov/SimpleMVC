@@ -10,7 +10,6 @@ define('POST_ROUTES', ROOT . 'routes/post.php');
 define('CONTROLLERS_PATH', ROOT . 'controllers/');
 define('MODELS_PATH', ROOT . 'models/');
 define('VIEWS_PATH', ROOT . 'views/');
-define('MIDDLEWARES_PATH', ROOT . 'Middlewares/');
 
 define('DB_NAME', 'test.loc');
 define('DB_HOST', 'localhost');

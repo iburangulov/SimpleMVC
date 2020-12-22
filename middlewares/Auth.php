@@ -1,7 +1,7 @@
 <?php
 
 
-namespace home\Middlewares;
+namespace home\middlewares;
 
 
 use home\components\DB;
@@ -30,6 +30,12 @@ class Auth
     public static function isAdmin()
     {
         return self::isType('admin');
+    }
+
+    public static function error(string $error)
+    {
+        $title = 'Error!';
+        include_once VIEWS_PATH . 'pages/error.php';
     }
 
 }

@@ -43,6 +43,7 @@ class userController
             $user_password = $_POST['password'];
 
             $this->model->addUser($user_name, $user_email, $user_password);
+            $this->signin();
         }
 
         header('Location: / ');
