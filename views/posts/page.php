@@ -6,8 +6,8 @@ include_once VIEWS_PATH . 'templates/navbar.php';
         <?php foreach ($result as $item) {
             ?>
                 <div class="short_post">
-            <div class="title"><a href="<?php echo 'blog/' .
-                    $item['id']; ?>"><?php echo $item['title']; ?></a></div>
+            <div class="title"><a href="<?php echo '/blog/'
+                     . $item['id']; ?>"><?php echo $item['title']; ?></a></div>
             <div class="post_content"><?php echo $item['content']; ?></div></div>
         <?php } ?>
 
