@@ -9,7 +9,7 @@ class userController
 
     public function __construct()
     {
-        $this->model = new UserModel();
+        $this->model = new UserModel('users');
     }
 
     public function signin()
@@ -19,7 +19,7 @@ class userController
             $user_email = $_POST['email'];
             $user_password = $_POST['password'];
 
-            $user = $this->model->login($user_email, $user_password);
+            $user = $this->model->attempt($user_email, $user_password);
             if (isset($user['id']) AND isset($user['email']))
             {
                 $_SESSION['user'] = [

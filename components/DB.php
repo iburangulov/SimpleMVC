@@ -14,7 +14,6 @@ class DB
         $dbUser = DB_USER;
         $dbPass = DB_PASS;
 
-
         $dsn = "mysql:host=$dbHost; dbname=$dbName";
         $pdo = new \PDO($dsn, $dbUser, $dbPass);
         return $pdo;
@@ -24,9 +23,12 @@ class DB
     {
         $query = "SELECT * FROM $table WHERE `id` = $id LIMIT 1";
         $pdo = self::getPDO();
-        $result = $pdo->query($query);
-        $resp = $result->fetch(PDO::FETCH_ASSOC);
-        return $resp;
+        if ($pdo)
+        {
+            $result = $pdo->query($query);
+            $resp = $result->fetch(PDO::FETCH_ASSOC);
+            return $resp;
+        } else return false;
     }
 
     public static function getFromTo($table, $limit, $offset)
@@ -34,12 +36,15 @@ class DB
         $query = "SELECT * FROM $table LIMIT $limit OFFSET $offset";
         $pdo = self::getPDO();
         $result = $pdo->query($query);
-        $resp = array();
-        while ($row = $result->fetch(PDO::FETCH_ASSOC))
+        if ($result)
         {
-            $resp[] = $row;
-        }
-        return $resp;
+            $resp = array();
+            while ($row = $result->fetch(PDO::FETCH_ASSOC))
+            {
+                $resp[] = $row;
+            }
+            return $resp;
+        } else return false;
     }
 
 
