@@ -25,6 +25,7 @@ class userController
                 $_SESSION['user'] = [
                     'id' => $user['id'],
                     'email' => $user['email'],
+                    'type' => $user['type'],
 
                 ];
                 $_SESSION['auth'] = true;
@@ -38,7 +39,7 @@ class userController
     public function signup()
     {
         if (isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['password']) AND
-            isset($_POST['password_confirmation']) AND ($_POST['password'] !== $_POST['password_confirmation'])) {
+            isset($_POST['password_confirmation']) AND ($_POST['password'] === $_POST['password_confirmation'])) {
 
             $user_name = $_POST['name'];
             $user_email = $_POST['email'];

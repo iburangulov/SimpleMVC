@@ -4,7 +4,7 @@ include_once VIEWS_PATH . 'templates/navbar.php';
 ?>
     <div class="content">
 
-<h1>Welcome to my blog</h1>
+        <h1>Admin - home</h1>
 
     </div>
 <?php

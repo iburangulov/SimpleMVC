@@ -9,11 +9,13 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 22px;
     font-weight: 300;
-    color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
 }
 
 body {
-    background-color: brown;
+    background-color: azure;
 }
 
 div.navbar {
@@ -25,6 +27,7 @@ div.navbar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    border-radius: 0px;
 }
 
 div.navbar a {
@@ -34,12 +37,17 @@ div.navbar a {
     padding: 15px;
     font-weight: 400;
     color: white;
+    transition: .2s all;
+}
+
+div.navbar a:hover {
+    transform: translateY(-3px);
 }
 
 div.content {
     margin: 110px 10% 10px 10%;
     padding: 30px;
-    background-color: #DAF7A6;
+    background-color: #790084;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -52,7 +60,7 @@ div.title {
 }
 
 div.title a {
-    color: darkblue;
+    color: #adadf8;
 }
 
 div.post_content {
@@ -61,7 +69,11 @@ div.post_content {
 
 div.short_post {
     margin: 5px;
-    border: 1px solid brown;
+    transition: .2s all;
+}
+
+div.short_post:hover {
+    transform: translateY(-3px);
 }
 
 div.sign {
@@ -80,9 +92,13 @@ div.sign form {
 #inp {
     height: 40px;
     margin: 5px;
+    background-color: #FFC300;
+    color: black;
+    padding: 5px;
 }
 
 #btn {
     height: 40px;
     margin: 5px;
+    background-color: #FFC300;
 }

@@ -15,6 +15,8 @@ return array(
     'signup' => 'pages/signup',
     'signout' => 'user/signout',
 
+    'admin' => 'admin/home',
+
 
 
 
