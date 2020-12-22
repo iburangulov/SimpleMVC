@@ -17,8 +17,6 @@ return array(
 
     'admin' => 'admin/home',
 
-
-
-
     '.*' => 'pages/p404',
+
 );

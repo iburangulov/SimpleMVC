@@ -33,6 +33,7 @@ class Router
 
             if (preg_match("~$pattern~", $this->uri))
             {
+
                 $modified = preg_replace("~$pattern~", $path, $this->uri);
                 $modified = explode('/', $modified);
 
@@ -61,5 +62,4 @@ class Router
             }
         }
     }
-
 }

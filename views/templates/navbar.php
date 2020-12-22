@@ -5,13 +5,13 @@
     <a href="<?php echo '/about'; ?>">About</a>
 
     <?php
-    if (isset($_SESSION['user']['type']) and $_SESSION['user']['type'] === 'admin')
+    if (\home\Middlewares\Auth::isType('admin'))
     {
         ?>
         <a href="<?php echo '/admin'; ?>">Admin panel</a>
         <?php
     }
-    if (isset($_SESSION['auth']) and $_SESSION['auth']) {
+    if (\home\Middlewares\Auth::check()) {
         ?>
         <a href="<?php echo '/signout'; ?>">Sign Out</a>
         <?php
