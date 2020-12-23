@@ -1,6 +1,6 @@
 <?php
 include_once VIEWS_PATH . 'templates/header.php';
-include_once VIEWS_PATH . 'templates/navbar.php';
+include_once VIEWS_PATH . 'admin/templates/navbar.php';
 ?>
     <div class="content">
 

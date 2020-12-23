@@ -1,6 +1,4 @@
 <?php
-
-
 use home\models\UserModel;
 
 class userController

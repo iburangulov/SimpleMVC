@@ -1,6 +1,4 @@
 <?php
-
-
 use home\middlewares\Auth;
 
 class adminController
@@ -20,5 +18,7 @@ class adminController
         $title = 'Admin panel';
         include_once VIEWS_PATH . 'admin/home.php';
     }
+
+
 
 }

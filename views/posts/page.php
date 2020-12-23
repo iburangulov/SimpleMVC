@@ -7,7 +7,7 @@ include_once VIEWS_PATH . 'templates/navbar.php';
 
         <ul class="pagination">
             <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
+                <a class="page-link" href="/blog/page/<?php echo $prev; ?>" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
                 </a>
             </li>
@@ -18,7 +18,7 @@ include_once VIEWS_PATH . 'templates/navbar.php';
             <li class="page-item"><a class="page-link" href="/blog/page/<?php echo $nextPage; ?>">
                     <?php echo $nextPage; ?></a></li>
             <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
+                <a class="page-link" href="/blog/page/<?php echo $next; ?>" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
                 </a>
             </li>
@@ -42,8 +42,30 @@ include_once VIEWS_PATH . 'templates/navbar.php';
         </div>
     </div>
 
-
 <?php } ?>
+
+
+    <div class="container d-flex flex-row justify-content-center">
+
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="/blog/page/<?php echo $prev; ?>" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="/blog/page/<?php echo $prevPage; ?>">
+                    <?php echo $prevPage; ?></a></li>
+            <li class="page-item"><a class="page-link" href="/blog/page/<?php echo $currentPage; ?>">
+                    <?php echo $currentPage; ?></a></li>
+            <li class="page-item"><a class="page-link" href="/blog/page/<?php echo $nextPage; ?>">
+                    <?php echo $nextPage; ?></a></li>
+            <li class="page-item">
+                <a class="page-link" href="/blog/page/<?php echo $next; ?>" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 
 
 <?php
