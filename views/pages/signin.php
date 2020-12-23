@@ -2,14 +2,21 @@
 include_once VIEWS_PATH . 'templates/header.php';
 include_once VIEWS_PATH . 'templates/navbar.php';
 ?>
-<div class="content">
-    <div class="sign">
-        <form action="/signin" method="POST">
-            <input type="email" name="email" placeholder="Email" id="inp">
-            <input type="password" name="password" placeholder="Password" id="inp">
-            <input type="submit" id="btn" value="Sign In">
-        </form>
-    </div>
+
+<div class="row bg-info p-4 bg-light text-dark mb-1">
+	<div class="col p-3">
+		<form action="/signin" method="POST" >
+			<div class="mb-3">
+				<label for="exampleInputEmail1" class="form-label">Email address</label>
+				<input type="email" name="email" class="form-control" id="exampleInputEmail1">
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Password</label>
+				<input type="password" name="password" class="form-control" id="exampleInputPassword1">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
 </div>
 <?php
 include_once VIEWS_PATH . 'templates/footer.php';
