@@ -1,7 +1,7 @@
 <?php
 
+use home\components\Route;
 use home\models\BlogModel;
-
 
 class blogController
 {
@@ -12,7 +12,6 @@ class blogController
     {
         $this->model = new BlogModel('posts');
         $this->postsOnPage = 10;
-
     }
 
     public function index()
@@ -30,9 +29,9 @@ class blogController
             $result = $this->model->getPage($id, $this->postsOnPage);
             if ($id <= 1)
             {
-                $prevPage = 1;
-                $currentPage = 2;
-                $nextPage = 3;
+                $prevPage = $id;
+                $currentPage = $id + 1;
+                $nextPage = $id + 2;
             } elseif ($id >= $maxPage)
             {
                 $prevPage = $maxPage - 2;
@@ -43,11 +42,15 @@ class blogController
                 $currentPage = $id;
                 $nextPage = $id + 1;
             }
+            $prev = $id - 4;
+            $next = $id + 4;
+            if ($prev < 1) $prev = 1;
+            if ($prev > $maxPage) $prev = $maxPage;
+
             $title = 'Page ' . $id;
             include_once VIEWS_PATH . 'posts/page.php';
-        } else {
-            header('Location: /blog/page/1');
-        }
+        } else Route::redirect('/blog');
+
     }
 
     public function post($id)
@@ -56,6 +59,6 @@ class blogController
         if ($result) {
             $title = 'Post ' . $id;
             include_once VIEWS_PATH . 'posts/single.php';
-        } else $this->index();
+        } else Route::redirect('/blog');
     }
 }

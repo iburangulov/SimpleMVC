@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69f09858-4d98-493c-a4e9-4a0dd1365cf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/pages/error.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/admin/templates/navbar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middlewares/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/adminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/adminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/blogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/blogController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/userController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BlogModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/BlogModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/styles/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/contacts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/signin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/posts/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/posts/page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/posts/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/posts/single.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/templates/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/templates/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/templates/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/templates/navbar.php" afterDir="false" />
@@ -74,7 +64,9 @@
       <workItem from="1608586727755" duration="9909000" />
       <workItem from="1608665705110" duration="11142000" />
       <workItem from="1608684190968" duration="1537000" />
-      <workItem from="1608696173474" duration="5546000" />
+      <workItem from="1608696173474" duration="6774000" />
+      <workItem from="1608710000029" duration="183000" />
+      <workItem from="1608742608416" duration="1803000" />
     </task>
     <task id="LOCAL-00001" summary="Authorisation">
       <created>1608592247307</created>
@@ -125,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608680540557</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Pagination added">
+      <created>1608702073929</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608702073929</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +147,8 @@
     <MESSAGE value="Base design, admin panel added" />
     <MESSAGE value="Models and controllers modified" />
     <MESSAGE value="Middlewares added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Middlewares added" />
+    <MESSAGE value="Pagination added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pagination added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

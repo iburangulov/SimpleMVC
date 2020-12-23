@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-primary fs-3 bg-gradient fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fs-4 bg-gradient fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand fs-3 text-light" href="/">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -43,7 +43,7 @@
                 ?>
             </ul>
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" type="search" placeholder="Not works" aria-label="Search">
                 <button class="btn btn-primary btn-outline-light" type="submit">Search</button>
             </form>
         </div>
